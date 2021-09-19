@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+  <title>Dashboard_police</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <!-- bootstrap table cdn -->
+  <script src="../js/dist/Chart.js"></script>
+  <script src="../js/index.js"></script>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link
+  href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+  rel="stylesheet"
+/>
+
+  <link rel="stylesheet" href="index.css" />
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 sider31">
+          <div class="sectfooter">
+            <img src="./assets/sfc.svg" alt="" />
+          </div>
+          <div class="rowxde">
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2777 3.22217H4.83328C3.94349 3.22217 3.22217 3.94349 3.22217 4.83328V11.2777C3.22217 12.1675 3.94349 12.8888 4.83328 12.8888H11.2777C12.1675 12.8888 12.8888 12.1675 12.8888 11.2777V4.83328C12.8888 3.94349 12.1675 3.22217 11.2777 3.22217Z"
+                fill="white"
+              />
+              <path
+                d="M24.1669 3.22217H17.7224C16.8326 3.22217 16.1113 3.94349 16.1113 4.83328V11.2777C16.1113 12.1675 16.8326 12.8888 17.7224 12.8888H24.1669C25.0567 12.8888 25.778 12.1675 25.778 11.2777V4.83328C25.778 3.94349 25.0567 3.22217 24.1669 3.22217Z"
+                fill="white"
+              />
+              <path
+                d="M11.2777 16.1111H4.83328C3.94349 16.1111 3.22217 16.8324 3.22217 17.7222V24.1666C3.22217 25.0564 3.94349 25.7778 4.83328 25.7778H11.2777C12.1675 25.7778 12.8888 25.0564 12.8888 24.1666V17.7222C12.8888 16.8324 12.1675 16.1111 11.2777 16.1111Z"
+                fill="white"
+              />
+              <path
+                d="M24.1669 16.1111H17.7224C16.8326 16.1111 16.1113 16.8324 16.1113 17.7222V24.1666C16.1113 25.0564 16.8326 25.7778 17.7224 25.7778H24.1669C25.0567 25.7778 25.778 25.0564 25.778 24.1666V17.7222C25.778 16.8324 25.0567 16.1111 24.1669 16.1111Z"
+                fill="white"
+              />
+            </svg>
+            <span class="ovb2">Overview</span>
+          </div>
+          <div class="rowxde rxf">
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.6944 17.7222C13.6944 17.5085 13.7793 17.3036 13.9303 17.1526C14.0814 17.0015 14.2863 16.9166 14.4999 16.9166H20.9444V4.83328C20.9444 4.40599 20.7746 3.99619 20.4725 3.69405C20.1704 3.39191 19.7606 3.22217 19.3333 3.22217H8.75633L3.22217 8.74828V24.1666C3.22217 24.5939 3.39191 25.0037 3.69405 25.3058C3.99619 25.608 4.40599 25.7777 4.83328 25.7777H19.3333C19.7606 25.7777 20.1704 25.608 20.4725 25.3058C20.7746 25.0037 20.9444 24.5939 20.9444 24.1666V18.5277H14.4999C14.2863 18.5277 14.0814 18.4429 13.9303 18.2918C13.7793 18.1407 13.6944 17.9358 13.6944 17.7222ZM9.66661 9.66661H4.83328V9.40884L9.41689 4.83328H9.66661V9.66661Z"
+                fill="#ffffff73"
+              />
+              <path
+                d="M23.6188 13.1708C23.4647 13.0388 23.2664 12.9698 23.0637 12.9777C22.861 12.9855 22.6687 13.0695 22.5252 13.213C22.3817 13.3565 22.2977 13.5488 22.2898 13.7515C22.282 13.9543 22.351 14.1525 22.4829 14.3066L25.101 16.9166H20.9443V18.5277H25.1252L22.4829 21.1699C22.3986 21.2421 22.3301 21.331 22.2818 21.4309C22.2334 21.5309 22.2063 21.6397 22.202 21.7507C22.1977 21.8616 22.2164 21.9723 22.2569 22.0756C22.2974 22.179 22.3588 22.2729 22.4373 22.3514C22.5158 22.4299 22.6097 22.4913 22.7131 22.5318C22.8164 22.5723 22.9271 22.591 23.038 22.5867C23.149 22.5824 23.2578 22.5553 23.3578 22.5069C23.4577 22.4586 23.5466 22.3901 23.6188 22.3058L28.1943 17.7221L23.6188 13.1708Z"
+                fill="#ffffff73"
+              />
+            </svg>
+
+            <span>Investment</span>
+          </div>
+          <div class="rowxde rxf">
+            <svg
+              width="21"
+              height="25"
+              viewBox="0 0 21 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.7075 8.87263H18.3534L11.7075 2.22679V8.87263ZM3.24919 0.414307H12.9159L20.1659 7.66431V22.1643C20.1659 23.4983 19.0832 24.581 17.7492 24.581H3.23709C1.90308 24.581 0.83252 23.4983 0.83252 22.1643L0.844615 2.83097C0.844615 1.49696 1.91395 0.414307 3.24919 0.414307ZM4.45826 22.1666H6.87492V14.9166H4.45826V22.1666ZM9.29159 22.1666H11.7083V12.5H9.29159V22.1666ZM14.1249 22.1666H16.5416V17.3333H14.1249V22.1666Z"
+                fill="#ffffff73"
+              />
+            </svg>
+
+            <span>Transactions</span>
+          </div>
+          <div class="rowxde rxf">
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.1768 19.3334C21.6342 19.3354 21.0977 19.4471 20.5993 19.6617C20.101 19.8762 19.6512 20.1893 19.2768 20.582L9.45706 15.6681C9.69862 14.9356 9.69862 14.145 9.45706 13.4125L19.2929 8.41003C19.9974 9.15246 20.9528 9.60641 21.9734 9.68366C22.994 9.76091 24.0068 9.45594 24.815 8.82803C25.6233 8.20011 26.1692 7.29411 26.3467 6.28612C26.5241 5.27813 26.3205 4.24017 25.7753 3.37397C25.2301 2.50777 24.3823 1.87522 23.3967 1.59927C22.4111 1.32332 21.3581 1.42369 20.4424 1.88085C19.5267 2.33802 18.8137 3.11933 18.4419 4.07293C18.0702 5.02652 18.0663 6.08427 18.431 7.04059L8.69179 11.9948C8.1658 11.3515 7.45372 10.8866 6.65318 10.6639C5.85263 10.4412 5.0028 10.4716 4.22017 10.7508C3.43755 11.03 2.76044 11.5445 2.28167 12.2236C1.8029 12.9028 1.5459 13.7134 1.5459 14.5443C1.5459 15.3753 1.8029 16.1859 2.28167 16.865C2.76044 17.5442 3.43755 18.0587 4.22017 18.3379C5.0028 18.6171 5.85263 18.6475 6.65318 18.4248C7.45372 18.2021 8.1658 17.7372 8.69179 17.0939L18.4068 21.9836C18.2426 22.4244 18.1581 22.8908 18.1571 23.3611C18.1571 24.1578 18.3933 24.9365 18.8359 25.5989C19.2784 26.2612 19.9075 26.7775 20.6435 27.0823C21.3795 27.3872 22.1893 27.4669 22.9706 27.3115C23.7519 27.1561 24.4696 26.7725 25.0329 26.2092C25.5962 25.6459 25.9798 24.9282 26.1352 24.1469C26.2906 23.3656 26.2109 22.5558 25.906 21.8198C25.6012 21.0838 25.0849 20.4547 24.4226 20.0122C23.7602 19.5696 22.9815 19.3334 22.1848 19.3334H22.1768Z"
+                fill="#ffffff73"
+              />
+            </svg>
+
+            <span>Invite Friends</span>
+          </div>
+          <div class="rowxde rxf">
+            <svg
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04ZM17 9L12 14L7 9H10V5H14V9H17Z"
+                fill="#ffffff73"
+              />
+            </svg>
+
+            <span>Download statement</span>
+          </div>
+        </div>
+        <div class="col-md-9 dashboard_main">
+          <div class="welcm">
+            <div class="welcome_text">
+              Hi Andie! you are yet to complete your account setup
+            </div>
+            <div class="nameavtar">
+              <img src="./assets/avatar.png" alt="" />
+              <span class="avatr"
+                >Andy Kane
+                <svg
+                  width="16"
+                  height="15"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M3.13086 5.61683L7.89477 10.5835L12.6587 5.61683C12.7881 5.48146 12.8588 5.29983 12.8553 5.11191C12.8519 4.92398 12.7744 4.74515 12.6401 4.61475C12.5057 4.48435 12.3254 4.41307 12.1389 4.41658C11.9524 4.4201 11.7749 4.49813 11.6455 4.6335L7.89477 8.546L4.13988 4.6335C4.01046 4.49813 3.83298 4.4201 3.64646 4.41658C3.45995 4.41307 3.27969 4.48435 3.14533 4.61475C3.01098 4.74515 2.93354 4.92398 2.93005 5.11191C2.92656 5.29983 2.99731 5.48146 3.12673 5.61683H3.13086Z"
+                      fill="#152144"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="invest3">
+            <div class="wlelc">Hi, Welcome</div>
+            <div class="">
+              <img src="./assets/invest.svg" alt="" />
+            </div>
+          </div>
+          <div class="invest31">
+            <div class="orangebox">
+              <div class="">Total Invested</div>
+              <div class="amount3">N35, 001,500.00</div>
+              <div class="amount3_1">from 15 investment plans</div>
+              <div class="backgroundimage">
+                <svg
+                  width="88"
+                  height="75"
+                  viewBox="0 0 88 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M88 41.1249C88 71.0819 40.1068 75 40.1068 75C40.1068 75 -10.701 61.9904 2.05459 41.1249C10.4616 27.3728 43.0361 74.5601 40.1067 24.6635C37.1774 -25.2332 88 11.1679 88 41.1249Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="1.53465"
+                      y1="7.17499"
+                      x2="90.2865"
+                      y2="43.5585"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="bgimage2">
+                <svg
+                  width="137"
+                  height="134"
+                  viewBox="0 0 137 134"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M137 60.1312C137 90.9444 25.6129 134 25.6129 134C25.6129 134 87.0983 55.6521 25.6129 60.1312C-35.8726 64.6103 25.6288 -19.7632 81.3065 4.33898C136.984 28.4412 137 29.318 137 60.1312Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="2.38917"
+                      y1="12.8193"
+                      x2="145.517"
+                      y2="63.9459"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="orangebox bluebox">
+              <div class="">Total Earned</div>
+              <div class="amount3">N1,500.00</div>
+              <div class="backgroundimage">
+                <svg
+                  width="88"
+                  height="75"
+                  viewBox="0 0 88 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M88 41.1249C88 71.0819 40.1068 75 40.1068 75C40.1068 75 -10.701 61.9904 2.05459 41.1249C10.4616 27.3728 43.0361 74.5601 40.1067 24.6635C37.1774 -25.2332 88 11.1679 88 41.1249Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="1.53465"
+                      y1="7.17499"
+                      x2="90.2865"
+                      y2="43.5585"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="bgimage2">
+                <svg
+                  width="137"
+                  height="134"
+                  viewBox="0 0 137 134"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M137 60.1312C137 90.9444 25.6129 134 25.6129 134C25.6129 134 87.0983 55.6521 25.6129 60.1312C-35.8726 64.6103 25.6288 -19.7632 81.3065 4.33898C136.984 28.4412 137 29.318 137 60.1312Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="2.38917"
+                      y1="12.8193"
+                      x2="145.517"
+                      y2="63.9459"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="orangebox graybox">
+              <div class="">Total payoff</div>
+              <div class="amount3">N3,500.00</div>
+              <div class="backgroundimage">
+                <svg
+                  width="88"
+                  height="75"
+                  viewBox="0 0 88 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M88 41.1249C88 71.0819 40.1068 75 40.1068 75C40.1068 75 -10.701 61.9904 2.05459 41.1249C10.4616 27.3728 43.0361 74.5601 40.1067 24.6635C37.1774 -25.2332 88 11.1679 88 41.1249Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="1.53465"
+                      y1="7.17499"
+                      x2="90.2865"
+                      y2="43.5585"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="bgimage2">
+                <svg
+                  width="137"
+                  height="134"
+                  viewBox="0 0 137 134"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    d="M137 60.1312C137 90.9444 25.6129 134 25.6129 134C25.6129 134 87.0983 55.6521 25.6129 60.1312C-35.8726 64.6103 25.6288 -19.7632 81.3065 4.33898C136.984 28.4412 137 29.318 137 60.1312Z"
+                    fill="url(#paint0_linear)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear"
+                      x1="2.38917"
+                      y1="12.8193"
+                      x2="145.517"
+                      y2="63.9459"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0.25" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flx2">
+            <div class="invstment_p23a col-md-4">
+              <div class="invstment_p23">Latest Investments</div>
+              <div class="itm7">
+                <div class="cardcustom">
+                  <img src="./assets/cardimage.png" class="imagecard" alt="" />
+                </div>
+                <div class="cardcustom3">
+                  <span class="in0title">INTEREST</span>
+                  <div class="duration">13% MONTHLY</div>
+                  <span class="in0title">Investable  Amount</span>
+                  <div class="duration"> <span class="from_"> N 55,000</span> to <span class="to_">N155,000 </div>
+                    <span class="in0title">INVESTORS</span>
+                    <div class="duration">200</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 mgttp">
+              <canvas
+              id="propertytype"
+              class="graphdv"
+              width="inherit"
+              height="200px"
+              max-height="100%"
+              min-height="380px"
+            ></canvas>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      //Bar chart for hot locations starts
+      const grayColor = "#f9a82533";
+      const highestColor = "#F9A825";
+      var ctx1 = document.getElementById("propertytype");
+      Chart.defaults.global.legend.display = false;
+      var myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: ["0 - 10%", "11 - 20%", "21 - 30%", "31 - 40%", "41 -50%", "51 - 60%"],
+          datasets: [
+            {
+              // label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderColor: [
+                grayColor,
+                highestColor,
+                grayColor,
+                grayColor,
+                grayColor,
+                grayColor,
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+            responsive: true,
+            xAxes: [
+              {
+                barPercentage: 0.3,
+                gridLines: {
+                  display: false,
+                  lineWidth: 1,
+                },
+              },
+            ],
+          },
+        },
+      });
+    </script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </body>
+</html>
